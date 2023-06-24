@@ -1,0 +1,19 @@
+---
+const { color, headerColor, idSection } = Astro.props;
+const textColor = `text-${headerColor}`
+const bgColor = `bg-${color}`
+---
+<section id={idSection} class={`landing-section ${bgColor} h-screen text-center relative overflow-hidden`} data-header-color={headerColor}>
+    <div class="z-30 relative h-full flex flex-col">
+        <header class=`${textColor}`>
+            <h2 class=`pt-40 text-4xl font-medium`>{idSection}</h2>
+            <p class='text-sm'>Programe una prueba de conduccion hoy mismo</p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <a class={`border-2 ${bgColor} border-${headerColor} text-sm rounded font-medium ${textColor} px-12 py-2 hover:bg-${headerColor} hover:text-${color} transition-colors`} href="#">Prueba de conduccion</a>
+            </div>
+        </footer>
+    </div>
+</section>
