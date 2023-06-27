@@ -1,8 +1,10 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
-import Section from '../components/Section.astro';
-
+import HomeSection from '../components/HomeSection.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ProjectSection from '../components/ProjectSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 ---
 
 <Layout title="Welcome to Astro."> <!-- Cambiar titulo de la pestaña -->
@@ -10,16 +12,16 @@ import Section from '../components/Section.astro';
 
 	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
 		<div class="snap-center">
-			<Section idSection="Home" color="black" headerColor="white"/>
+			<HomeSection/>
 		</div>
 		<div class="snap-center">
-			<Section idSection="About" color="white" headerColor="black"/>
+			<AboutSection/>
 		</div>
 		<div class="snap-center">
-			<Section idSection="Project" color="black" headerColor="white"/>
+			<ProjectSection/>
 		</div>
 		<div class="snap-center">
-			<Section idSection="Contact" color="white" headerColor="black"/>
+			<ContactSection/>
 		</div>
 	</main>
 </Layout>

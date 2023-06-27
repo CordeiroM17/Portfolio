@@ -1,0 +1,34 @@
+<section id="Contact" class="landing-section h-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col justify-between items-center">
+        <header>
+            <h2 class="pt-24 text-5xl font-medium">Contact</h2>
+            <p class="text-base">Contact Descripcion</p>
+        </header>
+
+        <div>
+            <form class="bg-gray-200 rounded p-6 flex flex-col text-start">
+                <div class="flex gap-5 mb-5">
+                    <div class="flex flex-col">
+                        <label for="name">Name:</label>
+                        <input class="p-2" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="surname">Surname:</label>
+                        <input class="p-2" type="text" id="surname" name="surname" required>
+                    </div>
+                </div>
+                
+                <label for="email">Email:</label>
+                <input class="mb-5 p-2" type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea class="mb-5 p-2 resize-none h-20" class="resize-none" id="message" name="message" rows="5" cols="30" maxlength="300" required></textarea>
+            
+                <input type="submit" value="Submit" class="border-2 border-black text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white cursor-pointer">
+              </form>
+        </div>
+    
+        <footer class="flex flex-col justify-end pb-20">
+        </footer>
+    </div>
+</section>

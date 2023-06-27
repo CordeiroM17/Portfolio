@@ -1,19 +1,29 @@
-<section class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
-    <div class="z-30 relative h-full flex flex-col">
+---
+import CardExperience from "./CardExperience.astro";
+
+---
+
+<section id="About" class="landing-section h-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col justify-between">
         <header>
-            <h2 class="text-black pt-40 text-4xl font-medium">Sobre mi uwu</h2>
-            <p class="text-black text-sm">Programe una prueba de conduccion hoy mismo</p>
+            <h2 class="pt-24 text-5xl font-medium">About</h2>
+            <p class="text-base">About Descripcion</p>
         </header>
 
-        <footer class="flex flex-col flex-grow justify-end pb-20">
-            <div class="flex gap-x-6 mx-auto">
-                <a class="border-2 border-white bg-white/5 backdrop-blur-xl text-sm rounded font-medium text-white px-12 py-2 hover:bg-white hover:text-black transition-colors" href="#">Prueba de conduccion</a>
-                <a class="border-2 border-white bg-white/5 backdrop-blur-xl text-sm rounded font-medium text-white px-12 py-2 hover:bg-white hover:text-black transition-colors" href="#">Prueba de conduccion</a>
+        <div class="px-14">
+            <div class="bg-gray-200 rounded grid grid-cols-2 p-6">
+                <CardExperience/>
+                <CardExperience/>
+                <CardExperience/>
+                <CardExperience/>
+            </div>
+        </div>
+    
+        <footer class="flex flex-col justify-end pb-20">
+            <div>
+                <a class="border-2 border-black text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white" href="#Project">Proyectos</a>
+                <a class="border-2 border-black text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white" href="#Contact">Contactame</a>
             </div>
         </footer>
-    </div>
-
-    <div class="absolute top-0 bottom-0 h-full w-full z-10">
-        <img src="/imagen.avif" alt="imagen" class="h-full w-full object-cover object-center">
     </div>
 </section>
